@@ -1,0 +1,28 @@
+package ex3;
+
+import java.util.Scanner;
+
+public class principalex3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        Ex3 analisador = new Ex3();
+
+        
+        System.out.println("=== Classificação por Peso e Altura ===");
+        System.out.print("Digite seu peso (em kg): ");
+        double peso = scanner.nextDouble();
+
+        System.out.print("Digite sua altura (em metros): ");
+        double altura = scanner.nextDouble();
+
+        
+        String classificacao = analisador.pedrofelix(peso, altura);
+
+        
+        System.out.println("Classificação: " + classificacao);
+
+        scanner.close();
+    }
+}
