@@ -1,0 +1,43 @@
+package ex3;
+
+
+public class Ex3 {
+        
+    
+    public String pedrofelix (double peso, double altura){
+            
+        
+        if (altura < 1.20){
+            if (peso <= 60){
+                return "A";
+            } else if (peso > 60 && peso <= 90) {
+                return "D";
+               
+            } else {
+                return "G"; 
+            }
+        }
+ if (altura > 1.70) {
+     if (peso <= 60){
+                return "C";
+            } else if (peso > 60 && peso <= 90) {
+                return "F";
+               
+            } else {
+                return "I"; 
+            }
+}
+if (altura > 1.20 && altura <= 1.70) {
+    if (peso <= 60){
+        return "B";
+        
+    } else if (peso > 60 && peso <=90) {
+        return "E";
+    } else {
+    return "H";}
+}          
+
+
+return "a";
+} 
+}
